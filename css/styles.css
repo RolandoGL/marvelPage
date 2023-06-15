@@ -1,0 +1,164 @@
+:root{
+    --main-bg-color: #202020;
+    --main-text-color: #ffffff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+}
+
+body{
+    background-color: var(--main-bg-color);
+}
+a{
+    text-decoration: none;
+    color: var(--main-text-color);
+
+}
+.footer{
+    padding: 80px 0 30px 0;
+    width: 100%;
+
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer__links{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.footer__logo{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 30px;
+    margin-right: 60px;
+}
+.footer__logo-svg{
+    width: 80px;
+}
+
+.footer__primary-links, .footer__secondary-links{
+    flex: 1;
+}
+
+.footer__primary-links, .footer__secondary-links{
+    font-family: Roboto,Trebuchet MS,Helvetica,Arial,sans-serif;
+    font-weight: 800;
+    margin-right: 60px;
+}
+
+.footer__link{
+    font-size: 13px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    list-style: none;
+}
+
+
+.footer__promotion{
+    margin-bottom: 40px;
+}
+
+.footer__promo-links{
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px 40px 40px;
+}
+
+.footer__promotion:first-of-type{
+    padding-bottom: 30px;
+}
+.footer__promotion-link{
+    display: flex;
+}
+
+.footer__promotion-image-wrapper{
+    width: 60px;
+}
+
+.footer__promotion-image{
+    width: 100%;
+}
+
+.footer__promotion-content{
+    padding-left: 30px;
+    width: 90%;
+    font-size: 14px;
+}
+
+.footer__promotion-title{
+    font-family: RobotoCondensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 0;
+    color: #fff;
+}
+
+.footer__promotion-content{
+    color: #767676;
+    font-family: Roboto,Trebuchet MS,Helvetica,Arial,sans-serif;
+
+    margin: 0;
+}
+
+
+
+h4{
+    font: 400 20px/1.3 Roboto Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+}
+.footer__media-title{
+    font-family: RobotoCondensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+
+
+.footer__social-media-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+    
+}
+
+.footer__social-media-link{
+    flex: 0 0 25%;
+}
+
+.footer__social-media-svg{
+    fill: #767676;;
+}
+
+.footer__legal{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1240px;
+    margin: auto;
+    gap: 20px;
+}
+
+.footer__legal-link{
+    color: #767676;
+}
