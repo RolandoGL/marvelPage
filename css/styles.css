@@ -106,19 +106,59 @@ a{
     font-weight: 700;
     position: relative;
     letter-spacing: 0;
-    width: auto;
+    width: max-content;
     z-index: 10;
+    
+    
+}
+.button__promo::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 28px;
+    display: block;
+    top: -12px;
+    left: 9px;
+    background: rgb(255, 255, 255);
+    transform: rotate(44deg);
+}
+.button__promo::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 28px;
+    display: block;
+    bottom: -13px;
+    right: 9px;
+    background: rgb(255, 255, 255);
+    transform: rotate(45deg);  
+}
+.button__promo__content{
+    position: relative;
+    font-size: 14px;
     padding: 0 35px;
 }
-.promo__btn::before{
-    margin-left: 16px;
-
+.button__promo__content::after{
+    content: '';
+    position: absolute;
+    width: calc(100% - 20px);
+    height: 15px;
+    display: block;
+    bottom: -10px;
+    left: 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
 }
-
-.promo__btn::after{
-
-}
-.promo__btn::after, .promo__btn::before{
+.button__promo__content::before{
+    content: '';
+    position: absolute;
+    width: calc(100% - 20px);
+    height: 15px;
+    display: block;
+    top: -10px;
+    right: 0;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
 }
 .card__link{
     color: #000000;
@@ -248,13 +288,59 @@ a{
     text-align: center;
     font: normal 11px/1.2 Roboto,Trebuchet MS,Helvetica,Arial,sans-serif;
 }
-.btn{
+.button{
+    position: relative;
+    margin-top: 10px;
+}
+
+.button::before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: -15px;
+    left: 0px;
+    border-right: 16px solid #e62429;
+    border-top: 16px solid transparent;
+}
+
+.button::after{
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -14px;
+    right: 0;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #e62429;
+}
+
+.button__content{
+    position: relative;
     padding: 0 35px;
     background-color: #e62429;
     text-transform: uppercase;
-    font: 800 14px/1 Roboto Bold,Trebuchet MS,Helvetica,Arial,sans-serif;;
+    font: 800 14px/1 Roboto Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
 }
 
+.button__content::before{
+    content: '';
+    position: absolute;
+    background: #e62429;
+    width: calc(100% - 15px);
+    height: 100%;
+    display: inline-block;
+    top: -15px;
+    left: 15px;
+}
+.button__content::after{
+    content: '';
+    position: absolute;
+    background: #e62429;
+    width: calc(100% - 15px);
+    height: 100%;
+    display: inline-block;
+    bottom : -15px;
+    left: 0;
+}
 /* .promo__content-btn{
     position: absolute;
     width: 100%;
