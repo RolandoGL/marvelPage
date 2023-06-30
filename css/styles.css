@@ -5,6 +5,7 @@
     --bg-color: #202020;
     --main-bg-color: #ffffff;
     --main-text-color: #ffffff;
+    --border--gray: #393939;
 }
 *{
     padding: 0;
@@ -39,6 +40,95 @@ a{
 .custom__scroll__bar::-webkit-scrollbar-thumb:hover {
     background: #e62429;
 }
+
+/* header-navbar styles star */
+
+.header__wrapper{
+    background-color: var(--bg-color);
+}
+.header__main__container{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid var(--border--gray);
+    height: 52px;
+}
+.user___tab{
+    color: white;
+    border-left: 1px solid var(--border--gray);
+    border-right: 1px solid var(--border--gray);
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    gap: 8px;
+}
+.user___tab span{
+    width: 20px;
+    display: inline-block;
+    height: 20px;
+    fill: #ffffff;
+}
+.user__tab__signin, .user__tab__join{
+    font: 400 12px/1 RobotoCondensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+}
+.header__right__links__wrapper{
+    border-left: 1px solid var(--border--gray);
+    border-right: 1px solid var(--border--gray);
+    display: flex;
+    gap: 10px;
+}
+.header__right__link{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    height: 100%;
+    border-right: 1px solid var(--border--gray);
+    padding: 0 15px;
+}
+.header__right__image{
+    height: 25px;
+}
+.header__right__content{
+    font: 400 12px/1 RobotoCondensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+    text-align: center;
+    display: block;
+}
+.navbar__container{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    height: 40px;
+    align-items: center;
+}
+.navbar__item{
+    list-style: none;
+    font: 400 12px/1 RobotoCondensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+}
+.header__promo__link{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    gap: 10px;
+}
+.header__promo__content{
+    height: max-content;
+    font-size: 14px;
+    font: 400 12px/1 RobotoCondensed,Trebuchet MS,Helvetica,Arial,sans-serif;
+}
+.header__promo__image__wrapper{
+    height: 100%;
+}
+.header__promo__image{
+    height: 100%;
+}
+.search{
+    padding: 15px 10px 15px 5px;
+}
+.search__icon{
+    stroke: #fff;
+}
+/* header-navbar styles end */
 
 /* feed__rail styles start*/
 .feed__header{
